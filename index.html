@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Win a Lenovo Legion Pro - Ultimate Gaming Experience</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #ff4d00;
+            --primary-dark: #e04500;
+            --secondary: #00a0e1;
+            --dark: #0f0f14;
+            --darker: #0a0a0d;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+            --success: #28a745;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--dark);
+            color: var(--light);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--darker) 0%, var(--dark) 100%);
+            padding: 20px 0;
+            position: relative;
+            z-index: 100;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo img {
+            height: 40px;
+        }
+
+        .logo-text {
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .timer {
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.1rem;
+            color: var(--primary);
+            border: 1px solid var(--primary);
+            box-shadow: 0 0 15px rgba(255, 77, 0, 0.3);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 15px rgba(255, 77, 0, 0.3); }
+            50% { box-shadow: 0 0 25px rgba(255, 77, 0, 0.5); }
+            100% { box-shadow: 0 0 15px rgba(255, 77, 0, 0.3); }
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 80vh;
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            background: linear-gradient(rgba(15, 15, 20, 0.7), rgba(15, 15, 20, 0.7)), 
+                        url('https://img.freepik.com/free-photo/abstract-dark-background-with-flowing-colouful-waves_1048-13124.jpg') no-repeat center center/cover;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            width: 100%;
+            padding: 40px 20px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .hero h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: clamp(2rem, 5vw, 4rem);
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: clamp(1rem, 2vw, 1.3rem);
+            max-width: 800px;
+            margin: 0 auto 30px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(45deg, var(--primary), var(--primary-dark));
+            color: white;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(255, 77, 0, 0.4);
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(255, 77, 0, 0.6);
+        }
+
+        .cta-button:active {
+            transform: translateY(1px);
+        }
+
+        .cta-button::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, var(--primary-dark), var(--primary));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .cta-button:hover::after {
+            opacity: 1;
+        }
+
+        .hero-image {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 60%;
+            z-index: 1;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateX(-50%) translateY(0px); }
+            50% { transform: translateX(-50%) translateY(-20px); }
+            100% { transform: translateX(-50%) translateY(0px); }
+        }
+
+        /* Features Section */
+        .features {
+            padding: 80px 0;
+            background-color: var(--darker);
+            position: relative;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+            position: relative;
+        }
+
+        .section-title h2 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.5rem;
+            color: var(--light);
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .section-title p {
+            color: var(--gray);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 30px;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .feature-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .feature-card:nth-child(1) { transition-delay: 0.1s; }
+        .feature-card:nth-child(2) { transition-delay: 0.2s; }
+        .feature-card:nth-child(3) { transition-delay: 0.3s; }
+        .feature-card:nth-child(4) { transition-delay: 0.4s; }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+            border-color: var(--primary);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: white;
+        }
+
+        .feature-card p {
+            color: var(--gray);
+        }
+
+        /* Laptop Showcase */
+        .showcase {
+            padding: 80px 0;
+            background: linear-gradient(to bottom, var(--darker) 0%, var(--dark) 100%);
+        }
+
+        .laptop-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .laptop-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            overflow: hidden;
+            width: 100%;
+            max-width: 500px;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .laptop-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .laptop-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+            border-color: var(--primary);
+        }
+
+        .laptop-image {
+            width: 100%;
+            height: 250px;
+            object-fit: contain;
+            background: linear-gradient(to right, #1a1a1a, #2a2a2a);
+            padding: 30px;
+        }
+
+        .laptop-details {
+            padding: 25px;
+        }
+
+        .laptop-details h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: white;
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        .laptop-model {
+            display: inline-block;
+            background-color: var(--primary);
+            color: white;
+            padding: 3px 10px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        .specs {
+            margin-bottom: 20px;
+        }
+
+        .spec-item {
+            display: flex;
+            margin-bottom: 8px;
+        }
+
+        .spec-icon {
+            color: var(--primary);
+            margin-right: 10px;
+            width: 20px;
+            text-align: center;
+        }
+
+        .price {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .original-price {
+            text-decoration: line-through;
+            color: var(--gray);
+            font-size: 1.2rem;
+            margin-right: 10px;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            padding: 80px 0;
+            background-color: var(--dark);
+        }
+
+        .testimonial-slider {
+            max-width: 800px;
+            margin: 50px auto 0;
+            position: relative;
+        }
+
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 30px;
+            margin: 0 20px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            opacity: 0;
+            transform: scale(0.9);
+            transition: all 0.5s ease;
+        }
+
+        .testimonial-card.active {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .testimonial-text {
+            font-size: 1.1rem;
+            font-style: italic;
+            margin-bottom: 20px;
+            color: rgba(255, 255, 255, 0.9);
+            position: relative;
+        }
+
+        .testimonial-text::before,
+        .testimonial-text::after {
+            content: '"';
+            font-size: 2rem;
+            color: var(--primary);
+            opacity: 0.5;
+        }
+
+        .testimonial-text::before {
+            margin-right: 5px;
+        }
+
+        .testimonial-text::after {
+            margin-left: 5px;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--primary);
+        }
+
+        .author-info h4 {
+            font-size: 1.1rem;
+            color: white;
+        }
+
+        .author-info p {
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+
+        .testimonial-nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            gap: 10px;
+        }
+
+        .nav-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: var(--gray);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .nav-dot.active {
+            background-color: var(--primary);
+            transform: scale(1.2);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 100px 0;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/dark-stripes.png');
+            opacity: 0.1;
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .cta-content h2 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        .cta-content p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .cta-button.secondary {
+            background: white;
+            color: var(--primary);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-button.secondary:hover {
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .cta-button.secondary::after {
+            background: linear-gradient(45deg, #f0f0f0, #e0e0e0);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--darker);
+            padding: 50px 0 20px;
+            text-align: center;
+        }
+
+        .footer-logo {
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 700;
+            font-size: 1.8rem;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .footer-links a {
+            color: var(--gray);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.05);
+            color: var(--gray);
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background-color: var(--primary);
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        .copyright {
+            color: var(--gray);
+            font-size: 0.9rem;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Floating Elements */
+        .floating-element {
+            position: absolute;
+            border-radius: 50%;
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            opacity: 0.1;
+            filter: blur(30px);
+            z-index: 1;
+        }
+
+        .floating-element-1 {
+            width: 300px;
+            height: 300px;
+            top: -150px;
+            right: -150px;
+            animation: float-1 15s ease-in-out infinite;
+        }
+
+        .floating-element-2 {
+            width: 200px;
+            height: 200px;
+            bottom: -100px;
+            left: -100px;
+            animation: float-2 12s ease-in-out infinite;
+        }
+
+        @keyframes float-1 {
+            0% { transform: translate(0, 0) rotate(0deg); }
+            50% { transform: translate(50px, 50px) rotate(180deg); }
+            100% { transform: translate(0, 0) rotate(360deg); }
+        }
+
+        @keyframes float-2 {
+            0% { transform: translate(0, 0) rotate(0deg); }
+            50% { transform: translate(-50px, -50px) rotate(-180deg); }
+            100% { transform: translate(0, 0) rotate(-360deg); }
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 992px) {
+            .hero {
+                height: auto;
+                min-height: auto;
+                padding: 100px 0;
+            }
+
+            .hero-image {
+                position: relative;
+                transform: none;
+                left: auto;
+                margin: 40px auto 0;
+                height: auto;
+                max-height: 300px;
+            }
+
+            .features-grid {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .laptop-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .laptop-card {
+                max-width: 100%;
+            }
+
+            .section-title h2 {
+                font-size: 2rem;
+            }
+
+            .cta-content h2 {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .feature-card {
+                padding: 20px;
+            }
+
+            .cta-button {
+                padding: 12px 30px;
+                font-size: 1rem;
+            }
+
+            .section-title h2 {
+                font-size: 1.8rem;
+            }
+
+            .cta-content h2 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with Timer -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="leno4.webp?context=bWFzdGVyfHJvb3R8MTE1NjYyfGltYWdlL3BuZ3xoYTYvaDViLzEwMjQxOTQ1MTUyNjA2LnBuZ3w5YjY0YzY2YjY5ZGM5MTY2YzE0Y2E2M2YxYzY5YzQ1YzY1YjI1YjI4M2Q5YzU0YzY2YjU1MjU3Y2E5YzE4" alt="Lenovo Logo">
+                    <span class="logo-text">Legion</span>
+                </div>
+                <div class="timer" id="countdown">
+                    <i class="fas fa-clock"></i> <span id="time">24:00:00</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="floating-element floating-element-1"></div>
+        <div class="floating-element floating-element-2"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>Register and Win a Lenovo Legion Pro 7i/5i</h1>
+                <p>The ultimate gaming experience with unbeatable price-performance ratio. Register now for a chance to win one of these technological marvels designed for demanding gamers.</p>
+                <a href="#register" class="cta-button">Try My Luck <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <img src="leno4.webp?context=bWFzdGVyfHJvb3R8MTQ0MTU5fGltYWdlL3BuZ3xoYjYvaDc0LzE0MDAxOTU3NzQ0ODc4LnBuZ3w0YzQ0YjI0YzY0YjY1YzU0YzI0YjI4Y2Y1YzQzY2U5YjY5YzVlY2U0YzU1YzQ3YzY0YjM5Y2Y1YjQ0YzY3" alt="Lenovo Legion Pro 7i" class="hero-image">
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Redefined Gaming Power</h2>
+                <p>Discover why the Lenovo Legion Pro 7i/5i is the ultimate choice for demanding gamers</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3>Extreme Performance</h3>
+                    <p>Latest generation Intel Core i9/i7 processors and NVIDIA RTX graphics cards for unmatched performance.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3>Ultra-Fast Refresh</h3>
+                    <p>Up to 240Hz display with 3ms response time for ultra-smooth images without tearing.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-snowflake"></i>
+                    </div>
+                    <h3>Cooling System</h3>
+                    <p>Legion Coldfront 5.0 technology with dual fans and optimal thermal dissipation.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-keyboard"></i>
+                    </div>
+                    <h3>Gaming Keyboard</h3>
+                    <p>RGB backlit keyboard with anti-ghosting keys and 1.5mm travel for maximum precision.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Laptop Showcase -->
+    <section class="showcase" id="models">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Flagship Models</h2>
+                <p>Choose the power that matches your gaming style</p>
+            </div>
+            <div class="laptop-container">
+                <div class="laptop-card">
+                    <img src="leno3.jpg?context=bWFzdGVyfHJvb3R8MTQ0MTU5fGltYWdlL3BuZ3xoYjYvaDc0LzE0MDAxOTU3NzQ0ODc4LnBuZ3w0YzQ0YjI0YzY0YjY1YzU0YzI0YjI4Y2Y1YzQzY2U5YjY5YzVlY2U0YzU1YzQ3YzY0YjM5Y2Y1YjQ0YzY3" alt="Lenovo Legion Pro 7i" class="laptop-image">
+                    <div class="laptop-details">
+                        <h3>Legion Pro 7i</h3>
+                        <span class="laptop-model">2023 Model</span>
+                        <div class="specs">
+                            <div class="spec-item">
+                                <div class="spec-icon"><i class="fas fa-microchip"></i></div>
+                                <div>Intel Core i9-13900HX (up to 5.4GHz)</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-icon"><i class="fas fa-memory"></i></div>
+                                <div>32GB DDR5 RAM - 1TB SSD NVMe</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-icon"><i class="fas fa-gamepad"></i></div>
+                                <div>NVIDIA RTX 4080 12GB GDDR6</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-icon"><i class="fas fa-desktop"></i></div>
+                                <div>16" WQXGA 240Hz 500nits HDR400 Display</div>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <span class="original-price">$3,299</span>
+                            <span>$2,999</span>
+                        </div>
+                        <a href="#register" class="cta-button">I Want It!</a>
+                    </div>
+                </div>
+                <div class="laptop-card">
+                    <img src="leno2.jpg?context=bWFzdGVyfHJvb3R8MTQ0MTU5fGltYWdlL3BuZ3xoYjYvaDc0LzE0MDAxOTU3NzQ0ODc4LnBuZ3w0YzQ0YjI0YzY0YjY1YzU0YzI0YjI4Y2Y1YzQzY2U5YjY5YzVlY2U0YzU1YzQ3YzY0YjM5Y2Y1YjQ0YzY3" alt="Lenovo Legion Pro 5i" class="laptop-image">
+                    <div class="laptop-details">
+                        <h3>Legion Pro 5i</h3>
+                        <span class="laptop-model">2023 Model</span>
+                        <div class="specs">
+                            <div class="spec-item">
+                                <div class="spec-icon"><i class="fas fa-microchip"></i></div>
+                                <div>Intel Core i7-13700HX (up to 5.0GHz)</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-icon"><i class="fas fa-memory"></i></div>
+                                <div>16GB DDR5 RAM - 1TB SSD NVMe</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-icon"><i class="fas fa-gamepad"></i></div>
+                                <div>NVIDIA RTX 4070 8GB GDDR6</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-icon"><i class="fas fa-desktop"></i></div>
+                                <div>16" WQXGA 165Hz 300nits Display</div>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <span class="original-price">$2,199</span>
+                            <span>$1,899</span>
+                        </div>
+                        <a href="#register" class="cta-button">I Want It!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>What Gamers Say</h2>
+                <p>See what professional gamers think about the Lenovo Legion Pro</p>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial-card active">
+                    <p class="testimonial-text">The Lenovo Legion Pro 7i completely transformed my gaming experience. The performance is incredible, even on the most demanding games at ultra settings. The 240Hz display makes all the difference in competitive play.</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John D." class="author-avatar">
+                        <div class="author-info">
+                            <h4>John D.</h4>
+                            <p>Professional Gamer - Team Liquid</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">For its price, the Legion Pro 5i delivers exceptional performance. The cooling system is so effective that even after hours of gaming, the laptop stays quiet and cool. A must-have for any serious gamer.</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah M." class="author-avatar">
+                        <div class="author-info">
+                            <h4>Sarah M.</h4>
+                            <p>Twitch Streamer - 50K followers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">As a game developer, I need a powerful machine. The Legion Pro 7i handles Unreal Engine 5 and 3D rendering without breaking a sweat. The premium build quality and RGB keyboard are welcome bonuses.</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Michael T." class="author-avatar">
+                        <div class="author-info">
+                            <h4>Michael T.</h4>
+                            <p>Indie Game Developer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-nav">
+                    <div class="nav-dot active" data-slide="0"></div>
+                    <div class="nav-dot" data-slide="1"></div>
+                    <div class="nav-dot" data-slide="2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="register">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Win Your Lenovo Legion Pro</h2>
+                <p>Register now for a chance to win the Lenovo Legion Pro 7i or 5i. Don't miss this opportunity to get the ultimate gaming machine!</p>
+                <a href="#" class="cta-button secondary">Register Now <i class="fas fa-trophy"></i></a>
+                <p style="margin-top: 20px; font-size: 0.9rem;">*Contest valid until 06/30/2023. Winner will be selected by random drawing.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-logo">Legion</div>
+            <div class="footer-links">
+                <a href="#">Legal Notice</a>
+                <a href="#">Contest Rules</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-twitch"></i></a>
+            </div>
+            <div class="copyright">
+                © 2023 Lenovo. All rights reserved. Legion is a registered trademark of Lenovo.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Countdown Timer
+        function updateCountdown() {
+            const now = new Date();
+            const endOfDay = new Date();
+            endOfDay.setHours(23, 59, 59, 999);
+            
+            const diff = endOfDay - now;
+            
+            const hours = Math.floor(diff / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            
+            document.getElementById('time').textContent = 
+                `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+        }
+        
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        // Testimonial Slider
+        const testimonials = document.querySelectorAll('.testimonial-card');
+        const dots = document.querySelectorAll('.nav-dot');
+        let currentTestimonial = 0;
+        
+        function showTestimonial(index) {
+            testimonials.forEach(testimonial => testimonial.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+            
+            testimonials[index].classList.add('active');
+            dots[index].classList.add('active');
+            currentTestimonial = index;
+        }
+        
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => showTestimonial(index));
+        });
+        
+        setInterval(() => {
+            currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+            showTestimonial(currentTestimonial);
+        }, 5000);
+
+        // Scroll Animation
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+        
+        document.querySelectorAll('.feature-card, .laptop-card').forEach(card => {
+            observer.observe(card);
+        });
+
+        // Smooth Scroll for Anchor Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
